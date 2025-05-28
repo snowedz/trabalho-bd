@@ -4,9 +4,6 @@
 
 * python
 * docker
-* pandas
-* virtualenv
-* redis-py
 
 ## Como usar
 
