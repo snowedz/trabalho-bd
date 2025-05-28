@@ -1,0 +1,24 @@
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - "./data:/data"
+    command: redis-server --save 60 1 
+    restart: unless-stopped
+    networks:
+      - redis
+  
+  redisinsight:
+    image: redis/redisinsight:latest
+    container_name: redisinsight
+    ports:
+      - "5540:5540"
+    restart: unless-stopped
+    networks:
+      - redis
+
+networks:
+   redis:
+      driver: bridge
