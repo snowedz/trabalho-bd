@@ -39,5 +39,5 @@ para rodar o script python
 Para acessar o RedisInsight
 ```localhost:5540```
 
-configurar a database para conectar em 
+Configure o RedisInsight para conectar em 
 ```redis://default@redis:6379```
