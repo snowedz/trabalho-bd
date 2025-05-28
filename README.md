@@ -16,7 +16,7 @@ No terminal
 
 ```virtualenv venv```
 
-No windows:
+No Windows:
  ``` .\venv\Scripts\activate```
 
 No Linux/WSL:
@@ -33,3 +33,8 @@ Para iniciar o container no docker
 para rodar o script python
 
 ```python main.py```
+
+##
+
+Para acessar o RedisInsight
+```localhost:5540```
