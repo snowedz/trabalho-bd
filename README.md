@@ -1,40 +1,40 @@
-# trabalho-bd
+# redis-and-python-integration
 
-## Requerimentos
+## Requirements
 
 * python
 * docker
 
-## Como usar
+## How to use
 
-No terminal
+In the terminal run
 
 ```pip install virtualenv```
 
 ```virtualenv venv```
 
-No Windows:
+If you use Windows:
  ``` .\venv\Scripts\activate```
 
-No Linux/WSL:
+If you use Linux/WSL:
   ```Source venv/bin/activate```
 
-Com o ambiente virtual ativado
+With the virtual environment activated
 
 ```pip install -r requirements.txt```
 
-Para iniciar o container no docker
+Open another terminal tab and run the docker containers
 
 ```docker compose up -d```
 
-para rodar o script python
+Back to the previous terminal tab to run the python script
 
 ```python main.py```
 
 ##
 
-Para acessar o RedisInsight
+To access the RedisInsight
 ```localhost:5540```
 
-Configure o RedisInsight para conectar em 
+To add the database in the RedisInsight 
 ```redis://default@redis:6379```
